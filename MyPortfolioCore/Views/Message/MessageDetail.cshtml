@@ -1,0 +1,37 @@
+﻿@model Message
+@{
+    ViewData["Title"] = "MessageDetail";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<input type="hidden" asp-for="MessageId" />
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Mesaj Detayları</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Mesaj Bilgileri</div>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-sm-2">Gönderen</dt>
+                            <dd class="col-sm-10">@Model.NameSurname</dd>
+
+                            <dt class="col-sm-2">Email</dt>
+                            <dd class="col-sm-10">@Model.Email</dd>
+
+                            <dt class="col-sm-2">Gönderim Tarihi</dt>
+                            <dd class="col-sm-10">@Model.SendDate.ToString("dd MMMM yyyy HH:mm")</dd>
+
+                            <dt class="col-sm-2">Mesaj</dt>
+                            <dd class="col-sm-10">@Model.MessageDetail</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
