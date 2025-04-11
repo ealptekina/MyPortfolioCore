@@ -1,0 +1,47 @@
+﻿@model Skill
+@{
+    ViewData["Title"] = "CreateSkill";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Uzmanlık Alanları</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Uzmanlık Ekle</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-sub">
+                            Uzmanlıklarla ile ilgili ekleme işlemleri aşağıdaki panelden yapabilirsiniz :
+                        </div>
+
+                        <form asp-action="CreateSkill" method="post">
+                            <div class="form-group">
+                                <label asp-for="Title">Başlık</label>
+                                <input asp-for="Title" class="form-control" />
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Value">Oran (Örnek:85)</label>
+                                <input asp-for="Value" class="form-control" />
+                                <span asp-validation-for="Value" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

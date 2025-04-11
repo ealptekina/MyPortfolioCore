@@ -1,0 +1,42 @@
+﻿@model Feature
+@{
+    ViewData["Title"] = "CreateFeature";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Yeteneklerim</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Yetenek Ekle</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-sub">
+                            Yetenekler ile ilgili ekleme işlemleri aşağıdaki panelden yapabilirsiniz :
+                        </div>
+
+                        <form asp-action="CreateFeature" method="post">
+                            <div class="form-group">
+                                <label asp-for="Title">Başlık</label>
+                                <input asp-for="Title" class="form-control" />
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Description">Açıklama</label>
+                                <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

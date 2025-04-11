@@ -10,6 +10,7 @@ namespace MyPortfolioCore.Controllers
 
         public IActionResult Index()
         {
+
             var values = context.ToDoLists.ToList();
             return View(values);
         }
