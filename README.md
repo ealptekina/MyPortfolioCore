@@ -1,4 +1,4 @@
-# 🧑‍💻 Dynamic Portfolio Project with ASP.NET Core
+# 🧑‍💻 Asp.Net Core Tabanlı Dinamik Portfolyo Uygulaması
 
 Bu proje, Murat Yücedağ’ın rehberliğinde tamamladığım **Asp.Net Core ile Dinamik Portfolyo Web Sitesi** eğitiminin çıktısıdır. Eğitim, başlangıç seviyesinden orta seviyeye kadar Asp.Net Core ve ilgili teknolojileri gerçek bir proje üzerinden öğretmeyi amaçlamaktadır.
 
